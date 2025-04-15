@@ -174,6 +174,172 @@
 // })();
  
 //
-(()=>{
-  console.log("run right away");
- })();
+// (()=>{
+//   console.log("run right away");
+//  })();
+
+//  [invole a function expression so that it gets invoked immeddiately it is anonymous it  doesn't have a function call ]
+
+// (function(){
+//   console.log("IIFE!");
+// })();
+ 
+// 
+//  (()=>{
+//   console.log("run right away");
+//  })();
+
+// [Recursive function]
+
+// function getRecursive(nr){
+//   console.log(nr);
+//   if(nr>0)
+//   getRecursive(--nr);
+// }
+// getRecursive(3);
+
+// function longRecursive(nr){
+//   console.log("Started function:",nr);
+//   if(nr>0)
+//   longRecursive(nr-1);
+// else{
+// console.log("done with recursion");
+// }
+// console.log("Ended function:",nr);
+// }
+
+// longRecursive(4);
+
+// [invole a function expression so that it gets invoked immeddiately it is anonymous it  doesn't have a function call ]
+
+// (function(){
+//   console.log("IIFE!");
+// })();
+ 
+// 
+//  (()=>{
+//   console.log("run right away");
+//  })();
+
+// [Recursive function]
+
+// function getRecursive(nr){
+//   console.log(nr);
+//   if(nr>0)
+//   getRecursive(--nr);
+// }
+// getRecursive(3);
+
+// [invole a function expression so that it gets invoked immeddiately it is anonymous it  doesn't have a function call ]
+
+// (function(){
+//   console.log("IIFE!");
+// })();
+ 
+// 
+//  (()=>{
+//   console.log("run right away");
+//  })();
+
+// [Recursive function]
+
+// function getRecursive(nr){
+//   console.log(nr);
+//   if(nr>0)
+//   getRecursive(--nr);
+// }
+// getRecursive(3);
+
+// , the performance of recursion is slightly worse than the performance of regular iteration using a loop. So if this causes a bottleneck situation that would really slow down your application, then you might want to consider another approach.
+
+// NESTED FUNCTION
+
+// function doOuterFunctionStuff(nr) {
+//   console.log("Outer function");
+//    doInnerFunctionStuff(nr);
+//   function doInnerFunctionStuff(x) {
+//   console.log(x + 7);
+//   console.log("I can access outer variables:", nr);
+// }
+// }
+// doOuterFunctionStuff(2);
+
+// function doOuterFunctionStuff(nr) {
+//   doInnerFunctionStuff(nr);
+//   function doInnerFunctionStuff(x) {
+//     let z = 10;
+//   }
+//   console.log("Not accessible:", z);
+//  }
+//  doOuterFunctionStuff(2);
+
+// ANONYNMOUS FUNCTIONS
+
+// function doingStuffAnonymously() {
+//   console.log("Not so secret though.");
+//   }
+
+//  FUNCTION CALLBACKS
+
+// function doFlexibleStuff(executeStuff) {
+//   executeStuff();
+//  console.log("Inside doFlexibleStuffFunction.");
+//  }
+//  doFlexibleStuff(doingStuffAnonymously);
+
+// let youGotThis = function () {
+//   console.log("You're doing really well, keep coding!");
+//   };
+//   setTimeout(youGotThis, 1000);
+// setInterval(youGotThis, 1000);
+
+// QUIZ
+
+// Q1
+
+// let val = 10;
+// function tester(val){
+//    val += 10;
+//    if(val < 100){
+//        return tester(val);
+//    }
+//    return val;
+// }
+// let y=tester(val);
+// console.log(y);
+
+// Q2
+
+// let testFunction = function(){
+//   console.log("Hello");
+// }();
+
+// Q3
+
+// (function () {
+//   console.log("Welcome");
+// })();
+// (function () {
+//   let firstName = "Laurence";
+// })();
+// let result = (function () {
+//   let firstName = "Laurence";
+//   return firstName;
+// })();
+// console.log(result);
+// (function (firstName) {
+//   console.log("My Name is " + firstName);
+// })("Laurence");
+
+// Q4
+
+// let test2 = (num) => num + 5;
+// console.log(test2(14));
+
+// Q5
+
+// var addFive1 = function addFive1(num) {
+//   return num + 2;
+//   };
+//   let addFive2 = (num) => num + 2;
+//   console.log(addFive1(14));
