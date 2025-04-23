@@ -101,30 +101,81 @@
 //public members can be asscessed directly by objects 
 //class can have both public and private members
 
-class person{
-    #firstname;//to make a variable private 
-    #lastname;
-    constructor(firstname,lastname){
-        this.#firstname = firstname;
-        this.#lastname = lastname;
-    }
-    get firstname(){
-        return this.#firstname;
-    }
-    set firstname(firstName){
-        this.#firstname = firstName;
-    }
-    get lastname(){
-        return this.#lastname;
-    }
-    set lastname(lastName){
-        this.#lastname = lastName;
-    }
-}
-let p = new person("Ravi","Singh");
-console.log(p.firstname);
-console.log(p.lastname);
-p.firstname = "Bhanu";
-console.log(p.firstname);
-p.lastname = "Singh";
-console.log(p.lastname);
+// class person{
+//     #firstname;//to make a variable private 
+//     #lastname;
+//     constructor(firstname,lastname){
+//         this.#firstname = firstname;
+//         this.#lastname = lastname;
+//     }
+//     get firstname(){
+//         return this.#firstname;
+//     }
+//     set firstname(firstName){
+//         this.#firstname = firstName;
+//     }
+//     get lastname(){
+//         return this.#lastname;
+//     }
+//     set lastname(lastName){
+//         this.#lastname = lastName;
+//     }
+// }
+// let p = new person("Ravi","Singh");
+// console.log(p.firstname);
+// console.log(p.lastname);
+// p.firstname = "Bhanu";
+// console.log(p.firstname);
+// p.lastname = "Singh";
+// console.log(p.lastname);
+
+// INHERITENCE
+// class can only have one parent class
+// types- Single, multilevel, multiple,hybrid, hierarchical
+// class Vechicle{
+//         constructor(color,currentSpeed ,maxSpeed){
+//             this.color = color;
+//             this.currentSpeed = currentSpeed;
+//             this.maxSpeed = maxSpeed;   
+//         }
+//         move(){
+//                     console.log("moving at",this.currentSpeed); 
+//                 }
+//                 accelerate(amount){
+//                     this.currentSpeed += amount;
+//                 }
+//             }
+//             class MotorCycle extends Vechicle{
+//     constructor(color,currentSpeed ,maxSpeed,fuel){
+//         super(color,currentSpeed ,maxSpeed);
+//         this.fuel = fuel;
+//     }
+//     doWheelie(){
+//         console.log("Driving on one wheel");
+//     }
+// }
+// let motor = new MotorCycle("Red",100,200,"Petrol");
+// console.log(motor.color);
+// console.log(motor.fuel);
+// motor.accelerate(50);   
+// motor.move();
+
+// PROTOTYPE
+// Prototypes are used to add new properties and methods to objects.
+// class Person{
+//     constructor(firstname,lastname){
+//         this.firstname = firstname;
+//         this.lastname = lastname;
+//     }
+//     greet(){
+//         console.log("Hi,There!!");
+//     }
+// }
+// Person.prototype.getFullName = function(){ 
+//     return this.firstname+" "+this.lastname;
+// };
+// Person.prototype.favColor = "Blue";
+// let p = new Person("Ravi","Singh");
+// console.log(p.getFullName());
+// console.log(p.favColor); 
+// console.log(p.greet());
