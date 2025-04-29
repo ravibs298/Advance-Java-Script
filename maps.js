@@ -77,11 +77,11 @@
 
 // Destructuring 
 
-const person = {
-    firstName: "Ravi",
-    lastName: "Singh",
-    age: 20
-};
+// const person = {
+//     firstName: "Ravi",
+//     lastName: "Singh",
+//     age: 20
+// };
 // Order of the object does not matter
 // let {firstName, lastName} = person;
 // let {lastName, firstName} = person;
@@ -89,12 +89,76 @@ const person = {
 // console.log(lastName);
 // Destucting does not change the original object
 
-let {firstName, lastName, country="India"} = person;
-console.log(firstName);
-console.log(lastName);
-console.log(country);
+// let {firstName, lastName, country="India"} = person;
+// console.log(firstName);
+// console.log(lastName);
+// console.log(country);
 
 // allias creation
 
-let {lastName: name} = person;
-console.log(name);
+// let {lastName: name} = person;
+// console.log(name);
+
+// let[a1,a2,a3,a4,a5]=name;
+// console.log(a1,a2,a3,a4,a5);
+
+// Array destructuring 
+
+// let arr = ["apple", "banana", "orange"];
+// let [fruit1,,fruit2] = arr;
+// console.log(fruit1);
+// console.log(fruit2);
+// console.log(fruit3);
+// let{[0]:fruit1 , [1]:fruit2} = fruits;
+// console.log(fruit1);
+// console.log(fruit2);
+
+// Rest Property
+
+// const numbers = [10,20,30,40,50,60,70];
+//destructuring 
+// const[a,b, ...rest] = numbers ;
+// console.log(a);
+// console.log(b);
+// console.log(rest);
+
+// destructring
+// let firstName = "Ravi";
+// let lastName = "Singh";
+// [firstName, lastName] = [lastName, firstName];
+// console.log(firstName);
+// console.log(lastName);
+//Exponentiation****************
+// let x = 2;
+// let z = x**2;
+// let n=Math.pow(x,3);
+// console.log(z);
+// console.log(n);
+
+// Array Include
+
+// const fruits = ["Bananas","Oranges","Apples","Mangoes"];
+// console.log(fruits.includes("Apples"));//true
+// console.log(fruits.includes("Bananas",3));//false
+
+// Trailing Comma
+// const arr = [
+//     "1",
+//     "2",
+//     "3",
+// ]
+// console.log(arr);
+// console.log(arr.length);
+
+// const person = {
+//     firstName:"Ravi",
+//     lastName:"Singh",   
+//     age : 20,
+// }
+
+const person ={
+    firstName:"Ravi",
+    ,
+    lastName:"Singh",   
+    age : 20,
+// }It will give syntax error unlike array 
